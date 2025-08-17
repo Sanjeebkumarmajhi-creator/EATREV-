@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
+    <title>Eat Rev - Street Food You Can Trust</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="header">
+      <div class="logo">
+        <div class="img">
+          <img src="images/logo.webp" alt="img" />
+        </div>
+        <div class="header">
+          <p>Eat Rev</p>
+          <p>Tasty Food</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <span id="search">🔍</span>
+        <span id="notification">🔔</span>
+        <span id="account">👤</span>
+        <button>Sign In</button>
+        <span id="option" style="font-size: 2.2rem; margin-right: 2px;">≡</span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- <h1><b>Street Food </b><br> You Can Trust</h1> -->
+      <h1
+        style="
+          color: #ffc400;
+          font-size: 2rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 0px;
+        "
+      >
+        Street Food
+      </h1>
+      <h2
+        style="
+          color: #ffb300;
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin: 0px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        You Can Trust
+      </h2>
+      <p style="text-align: center;padding:0px 10px;">Connecting food lovers with authentic street flavors you can trust.</p>
+
+      <div class="hero-buttons transparent-btn">
+  <button>Find Vendors</button>
+  <button>Become a Vendor</button>
+  <a href="reviewForm.html" class="btn">Upload Reviews</a>
+</div>
+
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <h1
+        style="
+          font-size: 2rem;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration:overline;
+        "
+      >
+        Find Your Perfect
+      </h1>
+      <h2
+        style="
+          font-size: 2rem;
+          text-decoration: underline;
+          color: #ff9100;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+            sans-serif;
+        "
+      >
+        Street Food
+      </h2>
+      <p
+        style="
+          font-size: 1.1rem;
+          color: rgb(95, 95, 95);
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 600;
+          font-style: italic;
+          margin-bottom: 5px;
+        "
+      >
+        Search by location, cuisine or specific dishes to discover amazing
+        street food vendors near you
+      </p>
+      <input
+        type="text"
+        placeholder="Enter Your Location"
+        style="width: 100%"
+      />
+      <input
+        type="text"
+        placeholder="Search for food, vendors, or dishes"
+        style="width: 100%"
+      />
+      <div class="filters">
+        <button>Rating</button>
+        <button>Veg</button>
+        <button>Non-Veg</button>
+        <button>Price</button>
+      </div>
+      <button
+        class="search"
+        style="
+          margin-top: 1rem;
+          width: 100%;
+          background: #ff5722;
+          color: white;
+          border: none;
+          border-radius: 5px;
+        "
+      >
+        Search
+      </button>
+    </section>
+    <div class="popular-tags">
+      <h1
+        style="
+          color: rgb(67, 64, 64);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        "
+      >
+        Popular Searches
+      </h1>
+      <div class="tags">
+        <span>Street Food</span>
+        <span>Samosa</span>
+        <span>Chaat</span>
+        <span>Dosa</span>
+        <span>Pani Puri</span>
+        <span>Momos</span>
+        <span>Jalebi</span>
+      </div>
+    </div>
+
+    <!-- Vendor Grid -->
+    <section class="vendor-grid">
+      <div class="vendor-card">
+        <div class="vendor-photo">
+          <img src="images/samosa.webp" alt="samosa" />
+        </div>
+        <div class="vendor-name">BSc Tiffin Centre ⭐⭐⭐⭐</div>
+        <p>Special Items: Samosa, Chaat</p>
+        <div class="vendor-actions">
+          <button>👍 Worth it</button>
+          <button>👎 Not Satisfy</button>
+        </div>
+      </div>
+      <div class="vendor-card">
+        <div class="vendor-photo">
+          <img src="images/fastfood.webp" alt="dosa" />
+        </div>
+        <div class="vendor-name">Ballu Fast Food ⭐⭐⭐</div>
+        <p>Special Items: Dosa, Idli</p>
+        <div class="vendor-actions">
+          <button>👍 Worth it</button>
+          <button>👎 Not Satisfy</button>
+        </div>
+      </div>
+      <div class="vendor-card">
+        <div class="vendor-photo">
+          <img src="images/momo.webp" alt="momo" />
+        </div>
+        <div class="vendor-name">Sanjeeb Momo Wala ⭐⭐⭐⭐</div>
+        <p>Special Items: Momos, Chowmein</p>
+        <div class="vendor-actions">
+          <button>👍 Worth it</button>
+          <button>👎 Not Satisfy</button>
+        </div>
+      </div>
+      <div class="vendor-card">
+        <div class="vendor-photo">
+          <img src="images/Golgappe.webp" alt="golgappe" />
+        </div>
+        <div class="vendor-name">Piyush Spicy Stall ⭐⭐⭐⭐</div>
+        <p>Special Items: Golgappe, Chatt</p>
+        <div class="vendor-actions">
+          <button>👍 Worth it</button>
+          <button>👎 Not Satisfy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2>Your Near Food Stall</h2>
+      <div id="map" style="height: 400px; border-radius: 10px"></div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+      <div class="feature">Interactive Map Search</div>
+      <div class="feature">Smart Rating System</div>
+      <div class="feature">Instant Photo Upload</div>
+      <div class="feature">Hygiene Certification</div>
+      <div class="feature">Live Notification</div>
+      <div class="feature">Performance Analytics</div>
+    </section>
+
+    <!-- Join Community -->
+    <section class="join">
+      <button>Join Community</button>
+    </section>
+    <script>
+
+
+      // Set up the map
+      var map = L.map("map").setView([28.6139, 77.209], 13); // Delhi coords
+
+      // Add tile layer (map style)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Add a sample marker
+      L.marker([28.6139, 77.209])
+        .addTo(map)
+        .bindPopup("<b>Example Food Stall</b><br>Delhi, India")
+        .openPopup();
+    </script>
+  </body>
+</html>
